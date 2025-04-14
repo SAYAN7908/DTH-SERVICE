@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatelliteTV Pro | DTH Services & New Connections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-blue: #1a237e;
+            --accent-orange: #ff6d00;
+            --dark-bg: #0d1b2a;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+
+        .header {
+            background: var(--dark-bg);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent-orange);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://blogassets.airtel.in/wp-content/uploads/2022/01/Find-the-best-DTH-service.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--accent-orange);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .services {
+            padding: 5rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-blue);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .packages {
+            background: var(--dark-bg);
+            color: white;
+            padding: 5rem 1rem;
+        }
+
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .package-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: var(--accent-orange);
+            margin: 1rem 0;
+        }
+
+        .contact {
+            padding: 5rem 1rem;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">SatelliteTV Pro</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>kalna DTH Services & New Connections</h1>
+            <p>Get HD Quality Entertainment with 1000+ Channels & On-Demand Content</p>
+           
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>New DTH Connection</h3>
+                <p>Quick installation with latest HD Set-Top Box</p>
+            </div>
+            <div class="service-card">
+                <h3>Channel Packages</h3>
+                <p>Customizable packages for all budgets</p>
+            </div>
+            <div class="service-card">
+                <h3>Dish Maintenance</h3>
+                <p>24/7 technical support & signal troubleshooting</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <h2 class="section-title">Popular Packages</h2>
+        <div class="package-grid">
+            <div class="package-card">
+                <h3>Basic HD</h3>
+                <div class="price">₹228/month</div>
+                <ul>
+                    <li>200+ Channels</li>
+                    <li>HD Set-Top Box</li>
+                    
+                </ul>
+            </div>
+            <div class="package-card">
+                <h3>Family Pack</h3>
+                <div class="price">₹261/month</div>
+                <ul>
+                    <li>250+ Channels</li>
+                    <li>Multi-TV Connection</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div>
+                <h2>Contact Us</h2>
+                <p>24/7 Customer Support</p>
+                <p>BIJAN KUMAR ROY</p>
+                <p>📞 9232687485</p>
+                
+                <p>🏢 kalna City, kalna 713409</p>
+            </div>
+           
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SatelliteTV Pro. All rights reserved.</p>
+        <p>Partnered with leading DTH providers across kalna</p>
+    </footer>
+
+    <script>
+        async function handleSubmit(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                address: document.getElementById('address').value,
+                service: document.getElementById('service').value
+            };
+
+            // Save to Google Sheets
+            try {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbw6uAs30pewQI4m2NcjZepLSl9hi7ra-N9Bf9DPqleDeu8CFXGJ-pXIWGPf60etuXl-OQ/exec', {
+                    method: 'POST',
+                    body: JSON.stringify(formData),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (!response.ok) throw new Error('Failed to save data');
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error saving data. Please try again.');
+                return;
+            }
+
+            // WhatsApp message
+            const whatsappMessage = `New DTH Service Request:%0A
+Name: ${formData.name}%0A
+Phone: ${formData.phone}%0A
+Email: ${formData.email}%0A
+Address: ${formData.address}%0A
+Service Needed: ${formData.service}`;
+
+            window.open(`https://wa.me/91YOUR_WHATSAPP_NUMBER?text=${919232687485}`, '_blank');
+        }
+    </script>
+</body>
+</html>
